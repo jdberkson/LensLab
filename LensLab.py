@@ -1,17 +1,14 @@
 from sympy import Eq, solve, subs, symbols
 
-
-# Alight so here's the dealio so far. I'm trying to lay out the framework for
-#   all the object classes (See descriptions next to each one for what I'm
-#   thinking it will contain)
-
-#   I'm thinking this class is like the master it will have all the UI control
-#   in it and will probably end up closely involving the System class. I don't
-#   really know what to do with it yet but I'm not gonna mess with it for awhile.
-#   @Scott might be something you'd be really good at
 class Application():
-    def __init__(self):
-        print("Booting LensLab")
+    """
+    Description: User defines what they are tring to do, i.e. lens design, interferograms, etc.
+
+    Notes:
+    """
+    def __init__(self,type):
+        self.type = type
+        print("Booting Pyght")
 
 #   The system class defines everything about the optical system as a whole
 #   It contains all of the elements and where they are, information about the
@@ -19,6 +16,9 @@ class Application():
 #   of methods for insterting elements, and basically just adjusting all of the
 #   described above
 class System():
+    """
+    Description: Defines everything about the optical system as a whole
+    """
     def __init__(Self):
         #sfvnef
         def insertElement(self):
